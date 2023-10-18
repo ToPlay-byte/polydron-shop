@@ -1,0 +1,135 @@
+.profile {
+    flex-grow: 1;
+    padding: 25px 0  35px;
+    position: relative;
+    &__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        margin-top: 35px;
+        margin-left: 20px;
+        &.hidden {
+            display: none;
+        }
+        &-field {
+            display: flex;
+            max-width: 600px;
+            &-name {
+                width: 60%;
+                color: #b9b1b1;
+            }
+        }
+        &-btn {
+            padding: 10px 50px;
+            border-radius: 3px;
+            background-color: #3d1dbd;
+            color: #fff;
+            margin-top: 15px;
+            margin-left: -20px;
+            align-self: flex-start;
+        }
+    }
+    &__btn {
+        margin-top: 15px;
+        color: #077fee;
+        cursor: pointer;
+    }
+}
+
+
+.form-edit {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 8px;
+    margin-top: 20px;
+    &.active {
+        display: flex;
+    }
+    &__section {
+        max-width: 300px;
+        width: 100%;
+        border: 1px solid #c0c0c0;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+    &__box {
+        display: flex;
+        column-gap: 8px;
+    }
+    &__btn {
+        padding: 13px 30px;
+        border-radius: 8px;
+        color: #fff;
+        &--change {
+            background-color: #3d1dbd;
+            &:disabled {
+                background-color: #b9b1b1;
+            }
+        }
+        &--cancel {
+            background-color: #b31911;
+        }
+    }
+}
+
+.change-password {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    &__wrapper {
+        max-width: 400px;
+        padding: 20px;
+        border: 1.5px solid #d6d6d6;
+        border-radius: 6px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__field {
+        margin-bottom: 10px;
+        padding: 5px;
+        border-bottom: 1px solid #077fee;
+    }
+    &__error {
+        color: #b31911;
+        margin-bottom: 5px;
+        &-header {
+            max-width: 300px;
+            color: #962323;
+            padding: 10px 20px;
+            border: 1px solid #3019c8;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+    }
+    &__box {
+        display: flex;
+        column-gap: 12px;
+    }
+    &__submit {
+        background-color: #3d1dbd;
+        padding: 10px 20px;
+        border-radius: 6px;
+        color: #fff;
+        text-align: center;
+        &:disabled {
+            background-color: #b9b1b1;
+        }
+    }
+    &__cancel {
+        color: #b31911;
+    }
+}

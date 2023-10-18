@@ -1,0 +1,32 @@
+
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 25px;
+}
+
+
+
+.sidbar {
+    height: 64vh;
+    padding: 50px 0 25px;
+    border-right: 1px solid #c4c4c4;
+    border-left: 1px solid #c4c4c4;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        transition: all 0.4s;
+        &-link {
+            display: block;
+            padding: 10px 35px;
+            border-top: 1px solid #c4c4c4;
+            border-bottom: 1px solid #c4c4c4;
+            &:hover {
+                background-color: #69cb1e;
+                color: #fff;
+            }
+        }
+    }
+}

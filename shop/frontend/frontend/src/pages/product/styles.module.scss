@@ -1,0 +1,402 @@
+.big-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.product {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 15px 0 15px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__title {
+        font-style: 24px;
+        margin-bottom: 15px;
+    }
+    &__images {
+        max-width: 400px;
+        &-item {
+            height: 300px;
+
+        }
+        &-dots {
+            display: flex !important;
+            align-items: center;
+            column-gap: 15px;
+            &-item {
+                max-width: 70px;
+                height: 70px;
+                cursor: pointer;
+            }
+        }
+    }
+    &__box {
+        display: flex;
+        column-gap: 20px;
+        align-items: center ;
+    }
+    &__favorite-btn {
+        text-align: center;
+        padding: 10px 15px;
+        border-radius: 3px;
+        background-color: #187eb5;
+        font-size: 14px;
+        color: #fff;
+        cursor: pointer;
+    }
+    &__buy{
+        &-wrapper {
+            padding: 25px 50px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        &-available {
+            display: block;
+            color: #ce4b17;
+            margin-bottom: 10px;
+        }
+        &-price {
+            font-weight: 700;
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        &-btn {
+            cursor: pointer;
+            text-align: center;
+            padding: 10px 15px;
+            border-radius: 3px;
+            background-color: #b51893;
+            max-width: 100px;
+            font-size: 14px;
+            color: #fff;
+            &.disabled {
+                background-color: #a8a6a6;
+            }
+        }
+        &-contacts {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+        }
+        &-phone {
+            display: block;
+            font-size: 18px;
+        }
+    }
+    &__info {
+        max-width: 800px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+
+.description {
+    font-size: 18px;
+}
+
+.characteristics {
+    max-width: 400px;
+    &__list {
+        display: flex;
+        padding: 10px 0 10px;
+        margin-top: 4px;
+        flex-direction: column;
+        row-gap: 8px;
+        border-top: 1px solid #a8a6a6;
+        border-bottom: 1px solid #a8a6a6;
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+    }
+    &__dots {
+        position: absolute;
+        top: 68%;
+        border-bottom: 2px dotted #a8a6a6;
+        width: 100%;
+        z-index: 0;
+    }
+    &__name {
+        display: inline;
+        z-index: 1;
+        background-color: #fff;
+        padding-right: 4px;
+    }
+    &__value {
+        background-color: #fff;
+        display: inline;
+        z-index: 1;
+        padding-left: 3px;
+    }
+}
+
+.comments-form {
+    padding: 10px 0 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    &__field {
+        padding: 5px;
+        border: 1px solid #0e83e2;
+        border-radius: 12px;
+        align-self: flex-start;
+    }
+    &__textarea {
+        resize: vertical;
+        border: 1px solid #0e83e2;
+        outline: none;
+        padding: 3px 5px;
+        min-height: 125px;
+        max-width: 600px;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+    &__submit {
+        padding: 5px 15px;
+        border-radius: 5px;
+        background-color: #039ce9;
+        color: #fff;
+        &:disabled {
+            background-color: #a8a6a6 !important;
+        }
+    }
+    &__cancel {
+        color: #cf2020;
+    }
+}
+
+.comments {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 10px 0 10px 5px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        max-width: 400px;
+        padding:15px 20px;
+        border: 1.3px solid #dad9d9;
+        border-radius: 5px;
+        transition: all 2s;
+        &-top {
+            padding: 10px 0 10px 0;
+            border-bottom: 1.3px solid #dad9d9;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__user {
+        color: #4d78ef;
+        font-weight: bold;
+    }
+    &__field {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        font-size: 16px;
+        border-bottom: 1px solid #c9c5c5;
+        max-width: 200px;
+    }
+    &__name {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    &__value {
+        font-size: 16px;
+    }
+    &__error {
+        margin-top: 6px;
+        color: #d92c2c;
+    }
+    &__add-btn {
+        padding: 10px 20px;
+        border-radius: 7px;
+        background-color: #2a59dc;
+        color: #fff;
+        margin-top: 10px;
+        &.hidden {
+            display: none;
+        }
+    }
+    &__options {
+        position: relative;
+        padding-left: 10px;
+    }
+    &__edit-btn {
+        font-size: 12px;
+    }
+    &__delete-btn {
+        font-size: 12px
+    }
+    &__reply-btn {
+        margin-left: -10px;
+        color: #fff;
+        padding: 10px 20px;
+        background-color: #2a59dc;
+        align-self: flex-start;
+    }
+    &__empty {
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+
+.subcomments {
+    margin-top: 12px;
+    &__btn {
+        display: flex;
+        align-items: center;
+        column-gap: 3px;
+        color: #2985e8;
+    }
+    &__list {
+        display: none;
+        margin-top: 8px;
+        margin-left: 12px;
+        flex-direction: column;
+        row-gap: 5px;
+        &.active {
+            display: flex;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+        &-content {
+        padding: 10px;
+        border: 1px solid #a8a6a6;
+        max-width: 400px;
+        }
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__user {
+        color: #4d78ef;
+        font-weight: bold;
+    }
+    &__text {
+        margin-top: 4px;
+    }
+    &__reply-btn {
+        cursor: pointer;
+        margin-top: 4px;
+        color: #96b0f7;
+    }
+    &__form {
+        display: flex;
+        margin-top: 8px;
+        padding: 10px;
+        border: 1px solid #a8a6a6;
+        flex-direction: column;
+        row-gap: 10px;
+        max-width: 400px;
+        &-title {
+            color: #2985e8;
+            font-size: 21px;
+        }
+        &-field {
+            max-width: 100%;
+            resize: vertical;
+            outline: none;
+        }
+        &-submit {
+            padding: 5px;
+            border-radius: 5px;
+            background-color: #2a59dc;
+            color: #fff;
+            &:disabled {
+                background-color: #a8a6a6 !important;
+            }
+        }
+        &-cancel {
+            color: #cf2020;
+        }
+    }
+    &__box {
+        margin-top: 5px;
+        display: flex;
+        column-gap: 5px;
+        align-items: center;
+    }
+    &__edit-form {
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px;
+        &__field {
+            max-width: 100%;
+            resize: vertical;
+            outline: none;
+        }
+        &__submit {
+            
+            padding: 5px;
+            border-radius: 5px;
+            background-color: #2a59dc;
+            color: #fff;
+        }
+        &__cancel {
+            color: #cf2020;
+        }
+
+    }
+}
+
+.dropdown {
+    position: relative;
+    padding-left: 10px;
+    &__open-btn {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3px;
+        padding: 3px;
+        & .dot {
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: #5b5b5b;
+        }
+    }   
+    &__list {
+        position: absolute;
+        top: 100%;
+        left: -50%;
+        &.active {
+            display: block;
+            opacity: 1;
+        }
+        display: none;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4px;
+        color: #fff;
+        background-color: #7d7373;;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    &__btn {
+        color: #fff;
+        font-size: 12px;
+    }
+}
+

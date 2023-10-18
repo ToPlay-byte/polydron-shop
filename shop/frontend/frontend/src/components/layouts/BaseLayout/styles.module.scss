@@ -1,0 +1,111 @@
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0 10px;
+        background-color: #083582;
+        
+    }
+    &__logo {
+        &-img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+    &__bottom {
+        background-color: #b36e20;
+        padding: 10px 0 10px;
+        &-inner {
+            display: flex;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+   
+    }
+    &__menu {
+        margin-right: 60px;
+        &-list {
+            display: flex;
+            column-gap: 10px;
+        }
+        &-item {
+            color: #fff;
+            text-align: center;
+        }
+        &-link {
+            font-size: 16px;
+            &.active {
+                border-bottom: 2px solid #23dbbd;
+                padding-bottom: 5px;
+            }
+        }
+    }
+    &__box {
+        margin-right: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        cursor: pointer;
+    }   
+    &__cart {
+        position: relative;
+        &-quantity {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 12px;
+            background-color: #172ec7;
+            padding: 3px 5px;
+            border-radius: 50%;
+        }
+    }
+}
+
+
+
+
+
+.footer {
+    background-color: #0e485f;
+    padding: 15px 0;
+    &__logo {
+        &-img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__box {
+        display: flex;
+        column-gap: 40px;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        color: #fff;
+        &-title {
+            font-weight: 700;
+            font-size: 20px;
+        }
+        &-item {
+            font-size: 14px;
+        }
+    }
+}
+
+

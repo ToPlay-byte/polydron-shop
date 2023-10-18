@@ -1,0 +1,37 @@
+.wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.reset-password {
+    height: 70vh;
+    &__inner {
+        margin-top: 250px;
+        padding: 20px;
+        border: 1px solid #bebebe;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+    &__field {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #15669c;
+        margin-bottom: 10px;
+    }
+    &__btn {
+        padding: 10px 20px;
+        background-color: #5e1cc7;
+        border-radius: 6px;
+        color: #fff;
+        text-align: center;
+        &:disabled {
+            background-color: #bebebe;
+        }
+    }
+    &__error {
+        color: #c92e2e;
+        margin-bottom: 5px;
+    }
+}
